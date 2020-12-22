@@ -1,31 +1,29 @@
-UberGallery - The simple PHP photo gallery
+SimplePHPictureViewer - Another simple PHP photo lister and viewer
 ==========================================
-Created by, [Chris Kankiewicz](http://www.ChrisKankiewicz.com)
+
+Forked from project UberGallery https://github.com/UberGallery/UberGallery
+that was created by, [Chris Kankiewicz](http://www.ChrisKankiewicz.com)
+
+This Fork is maintained at https://github.com/stokkeland/SimplePHPictureViewer
+and maintained by J T Stokkeland (http://www.stokkeland.net/jts/)
 
 
 Introduction
 ------------
-UberGallery is an easy to use, simple to manage, web photo gallery written in PHP and distributed
-under the [MIT License](http://www.opensource.org/licenses/mit-license.php). UberGallery
-**does not** require a database and supports JPEG, GIF and PNG file types. Simply upload your images
-and UberGallery will automatically generate thumbnails and output standards compliant XHTML markup
+This is an easy to use, simple to manage, web photo viewer written in PHP and distributed
+under the [MIT License](http://www.opensource.org/licenses/mit-license.php).  
+It **does not** require a database and supports JPEG, GIF and PNG file types. Simply upload your images
+and it will automatically generate thumbnails and output standards compliant XHTML markup
 on the fly.
-
-Like this project? Want to keep it free? [Make a donation](https://cash.me/$ChrisKankiewicz).
 
 Features
 --------
-  * Simple first time installation
-  * Database-less configuration
-  * Include galleries within pre-existing sites
-  * Create multiple galleries with a single installation
-  * Easily customize your gallery styles via CSS
-  * Install and update the gallery easily wth Git (optional)
+  * The main purpose of this fork is to support sub-directories with optional meta files
 
 
 Requirements
 ------------
-UberGallery requires PHP 5.2+ and the PHP-GD image library to work properly. For more information on
+Requires PHP 7.2 or neweer and the PHP-GD image library to work properly. For more information on
 PHP and the PHP-GD image library, please visit [http://php.net](http://php.net).
 
 
@@ -36,15 +34,16 @@ to your liking.
 
   2. Upload `index.php`, `resources/` and `gallery-images/` to your web server.
 
-  3. Upload images to the `gallery-images/` directory.
+  3. Upload images to the `pictures/` directory.
+     (Or change the picture directory location in ???TODO???)
 
   4. Make the `resources/cache/` directory writable by the web server:
 
     ```
-    chmod 777 /path/to/resources/cache
+    chmod go+rwx /path/to/resources/cache
     ```
 
-  5. Open your web browser and load the page where you installed UberGallery.
+  5. Open your web browser and load the page where you installed
 
 
 Custom Installation
@@ -171,16 +170,14 @@ If you're having issues with UberGallery here are a few troubleshooting tips:
 If you continue to have issues, please email me at: <Chris@ChrisKankiewicz.com>
 
 
-News & Updates
---------------
-UberGallery updates and news can be found on our [blog](http://news.ubergallery.net) or by
-following [@UberGallery](http://twitter.com/ubergallery) on Twitter.
-
-Please report bugs to the [Github issue tracker](http://github.com/UberGallery/ubergallery/issues).
-
-
 License
 -------
-UberGallery is distributed under the terms of the
+This is distributed under the terms of the
 [MIT License](http://www.opensource.org/licenses/mit-license.php).
+
+Original UberGallery 2.8.4 and all remaining code
 Copyright © 2013 [Chris Kankiewicz](http://www.chriskankiewicz.com)
+
+Major modification done in SimplePHPictureViewer 
+Copyright © 2020 [J T Stokkeland](http://www.stokkeland.net/jts)
+
