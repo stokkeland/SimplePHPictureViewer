@@ -1,9 +1,9 @@
 <?php
 
-    // Include the UberGallery class
-    include('resources/UberGallery.php');
+// SimplePHPictureViewer 
 
-    // Initialize the UberGallery object
+    require('resources/UberGallery.php');
+
     $gallery = new UberGallery();
 
     // Initialize the gallery array
